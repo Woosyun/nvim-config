@@ -6,3 +6,7 @@ vim.g.mapleader = " "
 
 vim.keymap.set('n', 'J', vim.diagnostic.open_float, { noremap = true, silent = true })
 
+vim.api.nvim_set_option("clipboard","unnamedplus")
+vim.keymap.set({ 'n', 'x' }, '<leader>cp', '"+y')
+vim.keymap.set({ 'n', 'x' }, '<leader>cv', '"+p')
+
